@@ -40,7 +40,10 @@ CursorPts = [CursorPts; CursorPts(1,:)]; % Close the polygon by adding the first
     
 Corners = CursorPts;
 Obstacles = [];
+AllCornerObsPos = Corners;
+save(fullfile(Output_UserDefinedFloorPlan_Path,'AllCornerObsPos.mat'),'AllCornerObsPos');
 save(fullfile(Output_UserDefinedFloorPlan_Path,'Corners.mat'),'Corners');
+
 save(fullfile(Output_UserDefinedFloorPlan_Path,'Obstacles.mat'),'Obstacles');
 
 disp('Generating visibility information for corners');

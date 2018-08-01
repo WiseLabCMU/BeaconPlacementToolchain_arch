@@ -71,8 +71,9 @@ BeaconPlacement_Done = 0;
 
                 Call_UserDefinedBeaconPlacement(SelectedBeaconPlacement_Path);
                 ComputeAndPlotCoverageClassAndDOP(SelectedBeaconPlacement_Path,'CDF');
-                PlotComparisonOfMultiplePlacements();
-                 
+                PlotComparisonOfMultiplePlacements();                
+                [SecurePoly] = GetAndPlotSecureZones(SelectedBeaconPlacement_Path)
+ 
         else 
             Exit=1;
         end
